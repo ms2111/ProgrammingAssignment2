@@ -23,10 +23,7 @@ makeCacheMatrix <- function(x = matrix()) {
       list(set = set, change = change, get = get, set_inv = set_inv, get_inv = get_inv)
 
 }
-
-
 ## Write a short comment describing this function
-
 cacheSolve <- function(x, ...) {
         ## Return a matrix that is the inverse of 'x'
       inv_m<-x$get_inv()
@@ -39,7 +36,4 @@ cacheSolve <- function(x, ...) {
       inv_m <- solve(data,...)
       x$set_inv(inv_m)
       inv_m
-      
-
-  
 }
