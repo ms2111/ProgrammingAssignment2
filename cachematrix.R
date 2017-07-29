@@ -1,7 +1,7 @@
-## Put comments here that give an overall description of what your
-## functions do
+## functions to cach the inv of a matrix instead of recalculating it, 
+## it check if the matrix did not change, if it changed, it recalculate the inverse
 
-## Write a short comment describing this function
+## function that create the matric object
 
 makeCacheMatrix <- function(x = matrix()) {
       inv_m<-NULL
@@ -23,7 +23,7 @@ makeCacheMatrix <- function(x = matrix()) {
       list(set = set, change = change, get = get, set_inv = set_inv, get_inv = get_inv)
 
 }
-## Write a short comment describing this function
+## function that return inverse, calculate it if needed only the inverse
 cacheSolve <- function(x, ...) {
         ## Return a matrix that is the inverse of 'x'
       inv_m<-x$get_inv()
